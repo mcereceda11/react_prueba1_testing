@@ -218,7 +218,7 @@ export default function Curso() {
 							<p>Cantidad Alumnos: {item.alumnos ? item.alumnos.length:'--'}</p>
 							<Grid container spacing={2}>
 								<Grid item xs={4}>
-									<Button variant="contained" size="small" fullWidth onClick={getUsersForSelect}>Agregar Profesor</Button>
+									<Button variant="contained" size="small" fullWidth onClick={() => getUsersForSelect(1)}>Agregar Profesor</Button>
 								</Grid>
 								<Grid item xs={4}>
 									<Button variant="contained" size="small" fullWidth sx={{ mb: 1 }} onClick={() => getUsersForSelect(2)}>Agregar Alumno</Button>
